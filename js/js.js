@@ -20,5 +20,31 @@ $( document ).ready(function() {
     		$('#background').css('display', "none");
     	}
    });
+    //validate send data form
+    $("#myform").validate({
+        rules: {
+            // rule for email and phone
+            email: {
+              required: true,
+              email: true
+            },
+            phone:{
+                required: true,
+            }
+       },
+       // message for email and phone
+       messages: {
+            phone: {
+             required: "Обязательное поле",
+              pattern: "Не корректный формат"
+            },
+            email: {
+              required: "Обязательное поле",
+              email: "Не корректный формат"
+            }
+      }
+   });
+
 
 });
+

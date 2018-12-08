@@ -7,6 +7,8 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<link href="style/style.css" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
 	<script src="js/js.js"></script>
 </head>
 <body>
@@ -49,20 +51,20 @@
 <div id="log"></div>
 <div id="background">
 	<div id="popup">
-		<form action="thanks.php" method="POST">
+		<form id="myform" action="thanks.php" method="POST">
 			<input id="goods" type="hidden" name="goods">
 			<input id="price" type="hidden" name="price">
 			<label>Имя:
-				<input type="text" name="name" required placeholder="Ваше имя">
+				<input type="text" name="name" placeholder="Ваше имя">
 			</label>
 			<label>Телефон:
-				<input type="text" name="phone" required placeholder="Ваш телефон">
+				<input type="text" name="phone" required pattern="\d{9}" placeholder="Ваш телефон">
 			</label>
 			<label>Индекс:
-				<input type="number" name="index" required placeholder="Ваш индекс">
+				<input type="number" name="index" placeholder="Ваш индекс">
 			</label>
 			<label>Адрес:
-				<textarea name="address" required placeholder="Ваш адрес"></textarea>
+				<textarea name="address" placeholder="Ваш адрес"></textarea>
 			</label>
 			<label>Email:
 				<input type="text" name="email" required placeholder="Ваш email">
