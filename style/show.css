@@ -1,0 +1,22 @@
+body{
+	margin:1% 5%;
+}
+span{
+	text-align: center;
+	color: white;
+	font-family: Open Sans;
+	font-size:14px;
+	font-weight: 500;
+}
+h1{
+	text-align: center;
+}
+.col-sm-1{
+	text-align: center;
+	border: solid 1px white;
+	font-size: 12px;
+	background-color: #ea2525;
+}
+.row{
+	border: solid 2px white;
+}

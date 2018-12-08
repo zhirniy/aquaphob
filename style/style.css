@@ -1,0 +1,152 @@
+/* TAG */
+h1 {
+	text-align: center;
+	color: #ea2525;
+	font-family: Open Sans;
+	font-size:46px;
+	font-weight: 700;
+	margin-bottom:80px;
+	margin-top:50px;
+}
+
+h3{
+	text-align: center;
+	color: #1a0d40;
+	font-family: Lato;
+	font-size:30px;
+	font-weight: 700;
+
+}
+p{
+	text-align: center;
+	color: #1a0d40;
+	font-family: Open Sans;
+	font-size:24px;
+	font-weight: 700;
+	text-decoration:line-through;
+
+}
+/* TAG */
+/* CLASS */
+.border {
+		margin: 10px 10px auto;
+		height: 486px;
+		background-repeat: no-repeat;
+		background-size: contain;
+		position: relative;
+		border: solid 1px white !important;
+}
+.order {
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+}
+.sell{
+	display: block;
+	background-color: #ea2525;
+	width: fit-content;
+	color: 	white;
+	padding:0px 5px;
+	font-family: Lato;
+	font-size:22px;
+	font-weight: 700;
+	margin-top: -10px;
+}
+.price{
+	display: block;
+	background-color: #ea2525;
+	width: 152px !important;
+	height: 152px;
+	width: fit-content;
+	color: 	white;
+	font-family: Lato;
+	font-size:22px;
+	font-weight: 700;
+	border-radius: 76px;
+	border:5px solid white;
+	text-align: center;
+	padding-top: 25px;
+	float:right;
+	margin-top:100px; 
+}
+.price p{
+	color: white;
+	font-family: Open Sans;
+	font-size:18px;
+	font-weight: 700;
+	text-decoration:none;
+	margin-bottom: 0px; 
+
+}
+/* CLASS */
+/* ID */
+#popup label{
+	text-align: center;
+	color: white;
+	font-family: Open Sans;
+	font-size:16px;
+	font-weight: 700;
+	width: 95%;
+}
+#popup input{
+	float: right;
+}
+#popup textarea{
+	float: right;
+	width: 200px;
+}
+#background{
+	position: fixed;
+	background: rgba(128, 128, 128, 0.8);
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+	top:0;
+	display: none;
+
+}
+#popup{
+	width: 300px;
+	height: 380px;
+	padding-top: 50px;
+	background-color: #ea2525;
+	margin: 10% auto auto auto;
+	background: rgba(234, 37, 37, 1);
+	position: relative;
+
+}
+#submit{
+	text-align: center;
+	float: none;
+	width: 90%;
+	margin:5%;
+}
+#close{
+	position: absolute;
+	top:10px;
+	right: 10px;
+}
+/* ID */
+/* MEDIA */
+@media screen and (max-width: 992px) and (min-width: 768px) {
+	.border {
+		height: 386px;
+  }
+  	.price{
+  		margin-top:40px;
+  	}
+}
+@media screen and (max-width: 767px) {
+    h1 {
+    	margin-bottom:0px;
+    }
+    .border {
+    	margin: 20% auto auto auto;
+    	width: 320px;
+    }
+    .price{
+    	margin-top:80px;
+    }
+}
+/* MEDIA */
