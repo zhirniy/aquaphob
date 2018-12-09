@@ -13,8 +13,8 @@
 </head>
 <body>
 	<div class="container">
-   <h1>PROMO!</h1>
-  <div class="row">
+    <h1>PROMO!</h1>
+    <div class="row">
     <div class="col-md border" style="background-image: url(1.png);">
     	<h3>5 BOTTLES</h3>
     	<p><span>1 945 </span><span>Pln</span></p>
@@ -44,39 +44,37 @@
       		<p>233.4 pln</p>
   	 </span>
       <button type="button" class="btn btn-danger order">Buy Now</button>
-    </div>
-  </div>
-</div>
-<br>
-<div id="log"></div>
-<div id="background">
-	<div id="popup">
-		<form id="myform" action="thanks.php" method="POST">
-			<input id="goods" type="hidden" name="goods">
-			<input id="price" type="hidden" name="price">
-			<label>Имя:
-				<input type="text" name="name" placeholder="Ваше имя">
-			</label>
-			<label>Телефон:
-				<input type="text" name="phone" required pattern="\d{9}" placeholder="Ваш телефон">
-			</label>
-			<label>Индекс:
-				<input type="number" name="index" placeholder="Ваш индекс">
-			</label>
-			<label>Адрес:
-				<textarea name="address" placeholder="Ваш адрес"></textarea>
-			</label>
-			<label>Email:
-				<input type="text" name="email" required placeholder="Ваш email">
-			</label>
-			<label>Колличество:
-				<input id="number" style="width: 150px;" type="number" min="1" value="1" name="quantity">
-			</label>
-			<input type="submit" id="submit" value="Отправить">
-			<button type="button" id="close">&#10006</button>
-		</form>
+	    </div>
+	  </div>
 	</div>
-</div>
-
+	<br>
+	<div id="background">
+		<div id="popup">
+			<form id="myform" action="thanks.php" method="POST">
+				<input id="goods" type="hidden" name="goods">
+				<input id="price" type="hidden" name="price">
+				<label>Имя:
+					<input type="text" name="name" placeholder="Ваше имя">
+				</label>
+				<label>Телефон:
+					<input type="text" name="phone" required pattern="\d{9}" placeholder="Последние 9 цифр">
+				</label>
+				<label>Индекс:
+					<input type="number" name="index" placeholder="Ваш индекс">
+				</label>
+				<label>Адрес:
+					<textarea name="address" placeholder="Ваш адрес"></textarea>
+				</label>
+				<label>Email:
+					<input type="text" name="email" required placeholder="Ваш email">
+				</label>
+				<label>Колличество:
+					<input id="number" style="width: 150px;" type="number" min="1" value="1" name="quantity">
+				</label>
+				<input type="submit" id="submit" value="Отправить">
+				<button type="button" id="close">&#10006</button>
+			</form>
+		</div>
+	</div>
 </body>
 </html>
